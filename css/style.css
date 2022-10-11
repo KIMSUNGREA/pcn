@@ -3,8 +3,13 @@
 
 li { list-style: none;}
 a { text-decoration: none; color: inherit;}
-img { vertical-align: top;}
 
+
+.wrap {
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+}
 ul:after, .wrap:after, .cl:after {
     content: "";
     clear: both;
@@ -103,11 +108,42 @@ input[type="checkbox"] {
     width: 100%;
     padding: 20px 0;
     box-sizing: border-box;
-    background-color: blue;
+    background-color: #291fc0;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
     margin-top: 50px;
+}
+
+/* //login */
+
+/* main page*/
+header {
+    background-color: #000;
+    color: #fff;
+}
+header > .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .wrap:after {
+    display: none;
+}
+header .logo {
+    line-height: 80px;
+}
+header .logo a img {
+    width: 12%;
+    vertical-align: middle;
+}
+header .logo a span {
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li {
+    float: left;
+    margin: 0 10px;
 }
 
 
@@ -115,4 +151,24 @@ input[type="checkbox"] {
 
 
 
-/* //login */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //main page */
+
+
