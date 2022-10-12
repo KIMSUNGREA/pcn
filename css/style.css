@@ -139,7 +139,7 @@ header h1 {
 }
 header .gnb {
     position: absolute;
-    top: 0; left: 24%;
+    top: 0; left: 420px;
     color: #fff;
 }
 header .gnb > ul > li {
@@ -158,25 +158,27 @@ header .gnb > ul > li:nth-child(9):after {
 header .gnb > ul > li > a {
     display: block;
     line-height: 80px;
-    padding: 0 20px;
+    margin-right: 40px;
 }
 /* li에 hover 됐을때 */
 header .gnb > ul > li.bold {
     font-size: 16px;
     font-weight: bold;
 }
-header .gnb .submenu1 > li:hover > a {
-    color: rgb(192, 159, 51);
+header .submenu1 > li:hover > a {
+    color: rgb(245, 204, 68);
 }
-header .gnb .submenu1 li:hover:before {
+header .submenu1 li:hover:before {
     background: rgb(192, 159, 51);
+}
+header .submenu2 li:hover a {
+    color: rgb(245, 204, 68);
 }
 /* //hover */
 
 header .submenu1 {
     position: absolute;
-    top: 114px;
-    width: 100%;
+    top: 130px;
     z-index: 1;
     display: none;
 }
@@ -184,8 +186,8 @@ header .submenu1.subon {
     display: block;
 }
 header .submenu1 > li {
-    font-size: 16px;
-    padding-left: 20px;
+    font-size: 14px;
+    padding-left: 8px;
     margin-top: 20px;
     position: relative;
 }
@@ -202,7 +204,7 @@ header .submenu1 li:before {
     border-radius: 100%;
     background: #fff;
     position: absolute;
-    top: 10px; left: 10px;
+    top: 10px; left: 0;
     transition: all 0.3s;
 }
 header .submenu2 li {
@@ -214,6 +216,44 @@ header .submenu2 li a{
 }
 header .submenu2 li:first-child {
     margin-top: 20px;
+}
+header .timelog {
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 0; right: 0;
+}
+header .timelog .time {
+    margin-right: 20px;
+    line-height: 80px;
+}
+header .timelog .time span {
+    padding: 0 8px;
+}
+header .timelog .time button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 8px;
+}
+header .timelog .log > ul > li {
+    float: left;
+    position: relative;
+    padding: 0 14px;
+}
+header .timelog .log > ul > li > a {
+    display: block;
+    line-height: 80px;
+}
+header .timelog .log > ul > li:nth-child(1):after {
+    display: block;
+    content: "";
+    width: 1px; height: 10px;
+    background-color: #fff;
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    margin: auto 0;
 }
 /* //header */
 
