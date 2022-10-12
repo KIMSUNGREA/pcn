@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>경찰청</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
+        <div class="backg"></div>
         <div class="wrap">
             <h1>
                 <a href="#">
@@ -22,7 +25,7 @@
                     </li>
                     <li>
                         <a href="#">실종수색 현황</a>
-                        <ul class="submenu">
+                        <ul class="submenu1">
                             <li>
                                 <a href="#">수색 진행상황</a>
                             </li>
@@ -31,6 +34,17 @@
                             </li>
                             <li>
                                 <a href="#">수색팀 관리</a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="#">수색 신청 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">일반 수색자 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">임시 수색자 관리</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">실종 사건 정보</a>
@@ -42,7 +56,7 @@
                     </li>
                     <li>
                         <a href="#">실종수색 관리</a>
-                        <ul class="submenu">
+                        <ul class="submenu1">
                             <li>
                                 <a href="#">실종 수색 등록</a>
                             </li>
@@ -56,7 +70,7 @@
                     </li>
                     <li>
                         <a href="#">게시판 관리</a>
-                        <ul class="submenu">
+                        <ul class="submenu1">
                             <li>
                                 <a href="#">공지사항</a>
                             </li>
@@ -77,12 +91,44 @@
                     <li>
                         <a href="#">로그인 정책 관리</a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <i class="xi-timer-o"></i>
+                            <span>28분30초</span>
+                            <button type="reset" class="rstbtn">연장</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">마이페이지</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">개인정보수정</a>
+                            </li>
+                            <li>
+                                <a href="#">1:1문의</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">로그아웃</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
-    <section>
-        
-    </section>
+    <section></section>
+    <script>
+        $(".gnb > ul > li").on("mouseover", function () {
+            $(".backg").slideDown(300);
+            $(".submenu1").slideDown(300);
+            $(this).addClass("bold").siblings().removeClass("bold");
+        });
+
+        $("header").on("mouseleave", function () {
+            $(".backg").slideUp(300);
+            $(".submenu1").slideUp(300);
+        });
+
+    </script>
 </body>
 </html>

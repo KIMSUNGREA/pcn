@@ -117,59 +117,108 @@ input[type="checkbox"] {
 
 /* //login */
 
-/* main page*/
+/* header */
 header {
     height: 80px;
     background-color: #000;
+    position: relative;
+}
+header .backg {
+    width: 100%; height: 390px;
+    position: absolute;
+    top: 80px;
+    background-color: rgb(56, 46, 46);
+    z-index: 0;
+    display: none;
+}
+header .backg.backon {
+    display: block;
 }
 header h1 {
     padding-top: 20px;
-    float: left;
 }
 header .gnb {
-    float: right;
-    font-size: 16px;
-    font-weight: 500;
+    position: absolute;
+    top: 0; left: 24%;
     color: #fff;
 }
 header .gnb > ul > li {
     float: left;
     position: relative;
+    transition: all 0.5s;
+}
+header .gnb > ul > li:nth-child(9):after {
+    content: "";
+    display: block;
+    width: 1px; height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 35px; right: 0;
 }
 header .gnb > ul > li > a {
     display: block;
     line-height: 80px;
     padding: 0 20px;
 }
-header .gnb .submenu {
-    position: absolute;
-    top: 80px;
-    width: 100%;
+/* li에 hover 됐을때 */
+header .gnb > ul > li.bold {
+    font-size: 16px;
+    font-weight: bold;
 }
-header .gnb .submenu li {
+header .gnb .submenu1 > li:hover > a {
+    color: rgb(192, 159, 51);
+}
+header .gnb .submenu1 li:hover:before {
+    background: rgb(192, 159, 51);
+}
+/* //hover */
+
+header .submenu1 {
+    position: absolute;
+    top: 114px;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+header .submenu1.subon {
+    display: block;
+}
+header .submenu1 > li {
     font-size: 16px;
     padding-left: 20px;
+    margin-top: 20px;
+    position: relative;
 }
+header .submenu1 > li:nth-child(1) {
+    margin-top: 0;
+}
+header .submenu1 > li > a {
+    transition: all 0.3s;
+}
+header .submenu1 li:before {
+    content: "";
+    display: block;
+    width: 2px; height: 2px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 10px; left: 10px;
+    transition: all 0.3s;
+}
+header .submenu2 li {
+    margin-top: 14px;
+}
+header .submenu2 li a{
+    font-size: 14px;
+    transition: 0.3s;
+}
+header .submenu2 li:first-child {
+    margin-top: 20px;
+}
+/* //header */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* //main page */
 section {
     height: 2000px;
-    background-color: #f0f;
+    background-color: rgb(233, 233, 233);
 }
 
