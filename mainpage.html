@@ -317,17 +317,18 @@
         $(".gnb > ul > li").on("mouseover", function () {
             $(".backg").slideDown(300);
             $(".submenu1").slideDown(300);
-            // $(this).addClass("bold").siblings().removeClass("bold");
+            $(this).addClass("bold").siblings().removeClass("bold");
         });
 
         $("header").on("mouseleave", function () {
             $(".backg").slideUp(300);
             $(".submenu1").slideUp(300);
+            $(".gnb > ul > li").removeClass("bold");
         });
         $(".log > ul > li").on("mouseover", function () {
             $(".backg").slideDown(300);
             $(".submenu1").slideDown(300);
-            //$(this).addClass("bold").siblings().removeClass("bold");
+            $(this).addClass("bold").siblings().removeClass("bold");
         });
 
         $("header").on("mouseleave", function () {

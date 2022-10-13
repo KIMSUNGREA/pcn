@@ -151,7 +151,7 @@ header .gnb {
 header .gnb > ul > li {
     float: left;
     position: relative;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 header .gnb > ul > li:nth-child(9):after {
     content: "";
@@ -185,8 +185,9 @@ header .submenu2 li:hover a {
 
 header .submenu1 {
     position: absolute;
-    top: 130px;
+    top: 118px;
     z-index: 2;
+    font-weight: 400;
     display: none;
 }
 header .submenu1.subon {
