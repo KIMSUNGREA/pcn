@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 /* 리셋 */
 * { margin: 0; padding: 0;}
 
@@ -5,6 +6,11 @@ li { list-style: none;}
 a { text-decoration: none; color: inherit;}
 img { vertical-align: top;}
 
+body {
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}
 .wrap {
     width: 96%;
     margin: 0 auto;
@@ -127,15 +133,15 @@ header .backg {
     width: 100%; height: 390px;
     position: absolute;
     top: 80px;
-    background-color: rgb(56, 46, 46);
-    z-index: 0;
+    background-color: #333;
+    z-index: 1;
     display: none;
 }
 header .backg.backon {
     display: block;
 }
 header h1 {
-    padding-top: 20px;
+    padding-top: 22px;
 }
 header .gnb {
     position: absolute;
@@ -159,6 +165,7 @@ header .gnb > ul > li > a {
     display: block;
     line-height: 80px;
     margin-right: 40px;
+    font-size: 16px;
 }
 /* li에 hover 됐을때 */
 header .gnb > ul > li.bold {
@@ -166,20 +173,20 @@ header .gnb > ul > li.bold {
     font-weight: bold;
 }
 header .submenu1 > li:hover > a {
-    color: rgb(245, 204, 68);
+    color: #f9cc3d;
 }
 header .submenu1 li:hover:before {
-    background: rgb(192, 159, 51);
+    background: #f9cc3d;
 }
 header .submenu2 li:hover a {
-    color: rgb(245, 204, 68);
+    color: #f9cc3d;
 }
 /* //hover */
 
 header .submenu1 {
     position: absolute;
     top: 130px;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 header .submenu1.subon {
@@ -236,6 +243,7 @@ header .timelog .time button {
     padding: 5px 10px;
     color: #fff;
     border-radius: 8px;
+    cursor: pointer;
 }
 header .timelog .log > ul > li {
     float: left;
@@ -245,6 +253,7 @@ header .timelog .log > ul > li {
 header .timelog .log > ul > li > a {
     display: block;
     line-height: 80px;
+    font-size: 16px;
 }
 header .timelog .log > ul > li:nth-child(1):after {
     display: block;
@@ -257,8 +266,232 @@ header .timelog .log > ul > li:nth-child(1):after {
 }
 /* //header */
 
-section {
-    height: 2000px;
-    background-color: rgb(233, 233, 233);
+/* #main scetion */
+#main {
+    display: flex;
+}
+#main .leftsec {
+    width: 16%;
+    background-color: #062864;
+    color: #fff;
+    text-align: center;
+}
+#main .leftsec .fcimg {
+    width: 120px; height: 120px;
+    background: url(../images/레이어-6---Assistor.jpg) no-repeat;
+    background-position: -74px -40px;
+    border-radius: 100%;
+    margin: 70px auto 30px auto;
+}
+#main .leftsec dl dt strong {
+    font-size: 22px;
+}
+#main .leftsec dl dd {
+    padding-top: 14px;
+}
+.rightsec {
+    width: 85%;
+    background: #edf0f5;
+    padding: 10px;
+}
+/* rightsec .conut */
+.rightsec h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.rightsec h2 > i {
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+    left: 4px;
+}
+.rightsec .count {
+    background: #f8cc3c;
+}
+.rightsec .count ul:after {
+    display: none;
+}
+.rightsec .count ul {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.rightsec .count ul li {
+    width: calc(100% / 4);
+    text-align: center;
+    position: relative;
+}
+.rightsec .count ul li:after {
+    content: "";
+    display: block;
+    width: 1px; height: 50px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    margin: auto 0;
+}
+.rightsec .count ul li:last-child:after {
+    display: none;
+}
+.rightsec .count ul li p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.rightsec .count ul li strong {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+.rightsec .count ul li strong i {
+    font-style: normal;
+}
+/* //rightsec .conut */
+/* rightsec find */
+.rightsec .find {
+    margin: 10px 0;
+    height: 380px;
+    background-color: #fff;
+    border: 1px solid #dddfe3;
+    box-sizing: border-box;
+}
+.rightsec .find h2 {
+    padding: 34px;
+}
+.rightsec .find ul {
+    display: flex;
+}
+.rightsec .find ul li {
+    width: calc(100% / 4);
+    text-align: center;
+    position: relative;
+    padding: 0 34px;
+}
+.rightsec .find ul li h3 {
+    display: inline-block;
+    padding: 0 10px;
+    background: #fff0c0;
+}
+.rightsec .find .numbox {
+    margin: 34px 0;
+}
+.rightsec .find .num {
+    display: inline-block;
+    padding: 0 10px;
+}
+.rightsec .find .num p {
+    font-weight: 500;
+}
+.rightsec .find .num span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.rightsec .find .num i {
+    font-size: 20px;
+    font-style: normal;
+}
+.rightsec .find ul li .gauge {
+    text-align: left;
+}
+.rightsec .find ul li .gauge .gaugebar {
+    width: 100%; height: 10px;
+    background-color: #efefef;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    position: relative;
+}
+.rightsec .find ul li .gauge .gaugebar:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    border-radius: 8px;
+    background-color: #f8cc3c;
+    position: absolute;
+    left: 0;
+    transition: all 2s;
+}
+.rightsec .find ul li:nth-child(1) .gauge .gaugebar.gon1:after {
+    width: 60%;
+}
+.rightsec .find ul li:nth-child(2) .gauge .gaugebar.gon1:after {
+    width: 65%;
+}
+.rightsec .find ul li:nth-child(3) .gauge .gaugebar.gon1:after {
+    width: 30%;
+}
+.rightsec .find ul li:nth-child(4) .gauge .gaugebar.gon1:after {
+    width: 80%;
+}
+.rightsec .find ul li .gauge span {
+    color: #f8cc3c;
+}
+.rightsec .find ul li .gauge i {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* //rightsec find */
+/* rightsec info */
+.rightsec .fb {
+    display: flex;
+    justify-content: space-between;
+}
+.rightsec .info {
+    width: calc(50% - 5px); height: 280px;
+    background-color: #fff;
+    border: 1px solid #dddfe3;
+    box-sizing: border-box;
+    padding: 34px;
+}
+.rightsec .info h2 {
+    margin-bottom: 34px;
+}
+.rightsec .info ul li {
+    margin-top: 12px;
+    position: relative;
+}
+.rightsec .info ul li:first-child {
+    padding-top: 0;
+}
+.rightsec .info ul li span {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    margin: auto 0;
+    font-size: 14px;
+    color: #b1b1b1;
 }
 
+/* //right info */
+/* right report */
+
+
+
+
+
+/* //right reprt */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //#main scetion */
