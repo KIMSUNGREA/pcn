@@ -123,7 +123,7 @@ input[type="checkbox"] {
 
 /* //login */
 
-/* header */
+/* 공통 header */
 header {
     height: 80px;
     background-color: #000;
@@ -167,6 +167,9 @@ header .gnb > ul > li > a {
     margin-right: 40px;
     font-size: 16px;
 }
+header .gnb > ul > li > a.bold {
+    
+} 
 /* li에 hover 됐을때 */
 header .gnb > ul > li.bold {
     font-size: 16px;
@@ -265,9 +268,9 @@ header .timelog .log > ul > li:nth-child(1):after {
     right: 0; top: 0; bottom: 0;
     margin: auto 0;
 }
-/* //header */
+/* //공통 header */
 
-/* #main scetion */
+/* 메인 페이지 (mainpage.html) */
 #main {
     display: flex;
 }
@@ -464,13 +467,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 }
 
 /* //right info */
-/* right report */
-
-
-
-
-
-/* //right reprt */
+/* //메인 페이지 (mainpage) 완료 */
 
 
 
@@ -485,14 +482,98 @@ header .timelog .log > ul > li:nth-child(1):after {
 
 
 
+/* 실종수색 현황 (list.html) */
 
+/* .list_tit */
+.rightsec select {
+    -moz-appearance:none; /* Firefox */ 
+    -webkit-appearance:none; /* Safari and Chrome */ 
+    appearance:none;
+    background: url(../images/select.png) no-repeat;
+    background-position: 86% 50%;
+    outline: none;
+  }
+.rightsec .list_tit h2 {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    padding: 70px 0 40px 0;
+}
+.rightsec .list_tit form {
+    display: flex;
+    justify-content: center;
+}
+.rightsec .list_tit form select {
+    width: 180px;
+    border: 1px solid #c9c9c9;
+    border-right: 0;
+    cursor: pointer;
+    background-color: #fff;
+}
+.rightsec .list_tit form input {
+    width: 490px;
+    border: 1px solid #c9c9c9;
+}
+.rightsec .list_tit form button {
+    width: 60px;
+    background: #062864 url(../images/search.png) no-repeat;
+    background-position: 50% 50%;
+    border: 0;
+    cursor: pointer;
+}
+.rightsec .list_tit form .pd {
+    padding: 20px 24px;
+    outline: none;
+}
+/* //list_tit */
+/* list */
+.rightsec .list {
+    margin-top: 84px;
+    background-color: #fff;
+}
+.rightsec .list table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dddfe3;
+    border-bottom: 0;
+    border-collapse: collapse;
+    
+}
+.rightsec .list table th,td {
+    border-bottom: 1px solid #dddfe3;
+    padding: 24px 0;
+}
+.rightsec .list table td {
+    color: #7e7e7e;
+}
+/* //list */
+/* number_list */
+.rightsec .number_list {
+    height: 90px;
+    position: relative;
+}
+.rightsec .number_list ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.rightsec .number_list ul li {
+    float: left;
+    margin-right: 18px;
+}
+.rightsec .number_list ul li:nth-child(1) {
+    width: 22px; height: 22px;
+    border: 1px solid #c7c7c7;
+}
+.rightsec .number_list ul li:nth-child(12) {
+    width: 22px; height: 22px;
+    border: 1px solid #c7c7c7;
+}
+.rightsec .number_list ul li i {
+    font-size: 22px;
+    color: #c7c7c7;
+}
+/* //number_list */
 
-
-
-
-
-
-
-
-
-/* //#main scetion */
+/* //실종수색 현황 (list.html) */

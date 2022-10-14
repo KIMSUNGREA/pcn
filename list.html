@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경찰청</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="backg"></div>
+        <div class="wrap">
+            <h1>
+                <a href="#">
+                    <img src="images/plogo.png" alt="로고">
+                </a>
+            </h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">전체 통계</a>
+                    </li>
+                    <li>
+                        <a href="#">실종수색 현황</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">수색 진행상황</a>
+                            </li>
+                            <li>
+                                <a href="#">수색 범위 설정</a>
+                            </li>
+                            <li>
+                                <a href="#">수색팀 관리</a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="#">수색 신청 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">일반 수색자 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">임시 수색자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">실종 사건 정보</a>
+                            </li>
+                            <li>
+                                <a href="#">보고사항 관리<br>(해당사건)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">실종수색 관리</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">실종 수색 등록</a>
+                            </li>
+                            <li>
+                                <a href="#">실종 수색 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">관리자 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">게시판 관리</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">전체 보고사항</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">로그 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">로그인 정책 관리</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="timelog">
+                <div class="time">
+                    <i class="xi-alarm-o"></i><span>28분 30초</span><button>연장</button>
+                </div>
+                <div class="log">
+                    <ul>
+                        <li>
+                            <a href="#">마이페이지</a>
+                            <ul class="submenu1">
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">1:1문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    </header>
+    <section id="main">
+        <div class="leftsec">
+            <div class="fcimg"></div>
+            <dl>
+                <dt><strong>강민석</strong></dt>
+                <dd>수색자 · 혜화경찰서</dd>
+            </dl>
+        </div>
+        <div class="rightsec">
+            <div class="list_tit">
+                <h2>실종수색현황</h2>
+                <form>
+                    <select name="pl" id="pl" class="pd">
+                        <option value="전체">전체</option>
+                        <option value="전체">사건명</option>
+                        <option value="전체">관서</option>
+                        <option value="전체">책임자</option>
+                    </select>
+                    <input type="search" class="pd" placeholder="검색어를 입력해주세요.">
+                    <button type="button" class="pd"></button>
+                </form>
+            </div>
+            <div class="list">
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>사건명</th>
+                        <th>관서</th>
+                        <th>책임자</th>
+                        <th>날짜</th>
+                        <th>신청</th>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <a href="#">혜화역 강동욱 실종 수색</a>
+                        </td>
+                        <td>서울혜화경찰서</td>
+                        <td>이민철</td>
+                        <td>2022.09.05</td>
+                        <td>신청</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            <a href="#">노원역 김동욱 실종 수색</a>
+                        </td>
+                        <td>서울노원경찰서</td>
+                        <td>강대수</td>
+                        <td>2022.09.01</td>
+                        <td>대기중</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            <a href="#">태백 일가족 실종 수색</a>
+                        </td>
+                        <th>태백경찰서</th>
+                        <th>김철수</th>
+                        <th>2022.08.30</th>
+                        <td><span>참여중</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <a href="#">양구 김익명 실종 수색</a>
+                        </td>
+                        <td>양구경찰서</td>
+                        <td>김영희</td>
+                        <td>2022.08.29</td>
+                        <td>신청</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <a href="#">애월읍 김동희 실종 수색</a>
+                        </td>
+                        <td>서귀포 경찰서</td>
+                        <td>이민철</td>
+                        <td>2022.08.17</td>
+                        <td>신청</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <a href="#">혜화역 강동욱 실종 수색</a>
+                        </td>
+                        <td>서울혜화경찰서</td>
+                        <td>이민철</td>
+                        <td>2022.08.17</td>
+                        <td>신청</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <a href="#">노원역 김동욱 실종 수색</a>
+                        </td>
+                        <td>서울노원경찰서</td>
+                        <td>강대수</td>
+                        <td>2022.08.02</td>
+                        <td>대기중</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <a href="#">태백 일가족 실종 수색</a>
+                        </td>
+                        <th>태백경찰서</th>
+                        <th>김철수</th>
+                        <th>2022.07.30</th>
+                        <td>참여중</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <a href="#">양구 김익명 실종 수색</a>
+                        </td>
+                        <td>양구경찰서</td>
+                        <td>김영희</td>
+                        <td>2022.07.22</td>
+                        <td>신청</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="#">애월읍 김동희 실종 수색</a>
+                        </td>
+                        <td>서귀포 경찰서</td>
+                        <td>김미희</td>
+                        <td>2022.07.21</td>
+                        <td>신청</td>
+                    </tr>
+                </table>
+                <div class="number_list">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="xi-angle-left-min"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+                        <li>
+                            <a href="#">7</a>
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">10</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="xi-angle-right-min"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(".gnb > ul > li").on("mouseover", function () {
+            $(".backg").slideDown(300);
+            $(".submenu1").slideDown(300);
+            $(this).addClass("bold").siblings().removeClass("bold");
+        });
+
+        $("header").on("mouseleave", function () {
+            $(".backg").slideUp(300);
+            $(".submenu1").slideUp(300);
+            $(".gnb > ul > li").removeClass("bold");
+        });
+        $(".log > ul > li").on("mouseover", function () {
+            $(".backg").slideDown(300);
+            $(".submenu1").slideDown(300);
+            $(this).addClass("bold").siblings().removeClass("bold");
+        });
+
+        $("header").on("mouseleave", function () {
+            $(".backg").slideUp(300);
+            $(".submenu1").slideUp(300);
+        });
+
+
+        $(function () {
+            $(".gauge .gaugebar").addClass("gon1")
+        });
+
+    </script>
+</body>
+
+</html>
