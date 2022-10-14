@@ -59,12 +59,14 @@ form .id input {
     border: 1px solid #99999959;
     padding: 15px;
     box-sizing: border-box;
+    outline: none;
 }
 form .password input {
     width: 100%;
     border: 1px solid #7c7b7b59;
     padding: 15px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .user {
@@ -119,6 +121,7 @@ input[type="checkbox"] {
     font-weight: bold;
     font-size: 18px;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 /* //login */
@@ -168,7 +171,7 @@ header .gnb > ul > li > a {
     font-size: 16px;
 }
 header .gnb > ul > li > a.bold {
-    
+
 } 
 /* li에 hover 됐을때 */
 header .gnb > ul > li.bold {
