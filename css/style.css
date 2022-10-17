@@ -154,7 +154,6 @@ header .gnb {
 header .gnb > ul > li {
     float: left;
     position: relative;
-    transition: all 0.3s;
 }
 header .gnb > ul > li:nth-child(9):after {
     content: "";
@@ -215,7 +214,7 @@ header .submenu1 > li:nth-child(1) {
     margin-top: 0;
 }
 header .submenu1 > li > a {
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 header .submenu1 li:before {
     content: "";
@@ -225,7 +224,7 @@ header .submenu1 li:before {
     background: #fff;
     position: absolute;
     top: 10px; left: 0;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 header .submenu2 li {
     margin-top: 14px;
@@ -422,7 +421,7 @@ header .timelog .log > ul > li:nth-child(1):after {
     background-color: #f8cc3c;
     position: absolute;
     left: 0;
-    transition: all 2s;
+    transition: 2s;
 }
 .rightsec .find ul li:nth-child(1) .gauge .gaugebar.gon1:after {
     width: 60%;
@@ -612,5 +611,47 @@ header .timelog .log > ul > li:nth-child(1):after {
     color: #c7c7c7;
 }
 /* //number_list */
-
 /* //실종수색 현황 (list.html) */
+
+
+
+
+
+
+/* 실종자수색 현황 page. */
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //실종자수색 현황 page. */
