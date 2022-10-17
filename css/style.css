@@ -173,6 +173,12 @@ header .gnb > ul > li > a {
 header .gnb > ul > li > a.bold {
 
 } 
+/* 메인 메뉴 font-weight */
+header .gnb > ul > li > a.this {
+    font-weight: bold;
+}
+/* //메인 메뉴 font-weight */
+
 /* li에 hover 됐을때 */
 header .gnb > ul > li.bold {
     font-size: 16px;
@@ -549,7 +555,35 @@ header .timelog .log > ul > li:nth-child(1):after {
 .rightsec .list table td {
     color: #7e7e7e;
 }
+/* 신청 태그 */
+.rightsec .list table tr .apc {
+    display: inline-block;
+    width: 82px; line-height: 38px;
+    background-color: #062864;
+    color: #fff;
+}
+.rightsec .list table tr .wait {
+    display: inline-block;
+    width: 82px; line-height: 38px;
+    background-color: transparent;
+    color: #062864;
+    border: 1px solid #062864;
+}
+.rightsec .list table tr .ptp {
+    display: inline-block;
+    width: 82px; line-height: 38px;
+    background-color: #f8cc3c;
+    color: #333;
+}
+.rightsec .list table tr .apct {
+    display: inline-block;
+    width: 82px; line-height: 38px;
+    background-color: #b4bed0;
+    color: #fff;
+}
+/* //신청태그 */
 /* //list */
+
 /* number_list */
 .rightsec .number_list {
     height: 90px;
