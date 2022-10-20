@@ -299,14 +299,15 @@
 
         // 스와이퍼 //
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView : 4, //보여질 슬라이드 갯수
-            slidesPerGroup : 1, //슬라이드 넘길 때 이동 갯수
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-                
-            });
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    speed: 2000,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+});
 
     </script>
 </body>

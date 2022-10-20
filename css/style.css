@@ -596,28 +596,28 @@ header .timelog .log > ul > li:nth-child(1):after {
     height: 90px;
     position: relative;
 }
-.rightsec .number_list ul {
+.rightsec .number_list .num {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
 }
-.rightsec .number_list ul li {
+.rightsec .number_list .num .btn_prev, .btn_next {
+    display: inline-block;
+    width: 22px; height: 22px;
+}
+.rightsec .number_list .num .btn_prev {
+    background: url(../images/pager_btn_prev.png) no-repeat;
+    margin-right: 18px;
+}
+.rightsec .number_list .num .btn_next {
+    background: url(../images/pager_btn_next.png) no-repeat;
+}
+.rightsec .number_list .num ul li {
     float: left;
     margin-right: 18px;
 }
-.rightsec .number_list ul li:nth-child(1) {
-    width: 22px; height: 22px;
-    border: 1px solid #c7c7c7;
-}
-.rightsec .number_list ul li:nth-child(12) {
-    width: 22px; height: 22px;
-    border: 1px solid #c7c7c7;
-}
-.rightsec .number_list ul li i {
-    font-size: 22px;
-    color: #c7c7c7;
-}
+
 /* //number_list */
 /* //실종수색 현황 (list.html) */
 
