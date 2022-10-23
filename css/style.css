@@ -7,7 +7,7 @@ a { text-decoration: none; color: inherit;}
 img { vertical-align: top;}
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
 }
@@ -31,6 +31,7 @@ ul:after, .wrap:after, .cl:after {
 }
 /* //리셋코드 */
 
+<<<<<<< HEAD
 /* common */
 #main { display: flex; position: relative;}
 #main .leftsec { width: 280px; height: 100vh; color: #fff; text-align: center; padding: 0 30px; box-sizing: border-box; position: relative;}
@@ -41,6 +42,8 @@ ul:after, .wrap:after, .cl:after {
 #main .rightsec .srch_tit h1 { font-size: 34px;}
 
 /* //common */
+=======
+>>>>>>> 85271278c7f1320f39019ece749c3f375d523959
 
 
 /* login */
@@ -495,7 +498,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 
 /* 실종수색 현황 (list.html) */
 
-/* .list_tit */
+/* .srch_tit */
 .rightsec select {
     -moz-appearance:none; /* Firefox */ 
     -webkit-appearance:none; /* Safari and Chrome */ 
@@ -504,36 +507,30 @@ header .timelog .log > ul > li:nth-child(1):after {
     background-position: 86% 50%;
     outline: none;
   }
-.rightsec .list_tit h2 {
-    font-size: 34px;
-    font-weight: 600;
-    text-align: center;
-    padding: 70px 0 40px 0;
-}
-.rightsec .list_tit form {
+.rightsec .srch_tit form {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-.rightsec .list_tit form select {
+.rightsec .srch_tit form select {
     width: 180px;
     border: 1px solid #c9c9c9;
     border-right: 0;
     cursor: pointer;
     background-color: #fff;
 }
-.rightsec .list_tit form input {
+.rightsec .srch_tit form input {
     width: 490px;
     border: 1px solid #c9c9c9;
 }
-.rightsec .list_tit form button {
+.rightsec .srch_tit form button {
     width: 60px;
     background: #062864 url(../images/search.png) no-repeat;
     background-position: 50% 50%;
     border: 0;
     cursor: pointer;
 }
-.rightsec .list_tit form .pd {
+.rightsec .srch_tit form .pd {
     padding: 20px 24px;
     outline: none;
 }
@@ -565,6 +562,8 @@ header .timelog .log > ul > li:nth-child(1):after {
     width: 82px; line-height: 38px;
     background-color: #062864;
     color: #fff;
+    font-size: 14px;
+    font-weight: bold;
 }
 .rightsec .list table tr .wait {
     display: inline-block;
@@ -572,18 +571,24 @@ header .timelog .log > ul > li:nth-child(1):after {
     background-color: transparent;
     color: #062864;
     border: 1px solid #062864;
+    font-size: 14px;
+    font-weight: bold;
 }
 .rightsec .list table tr .ptp {
     display: inline-block;
     width: 82px; line-height: 38px;
     background-color: #f8cc3c;
     color: #333;
+    font-size: 14px;
+    font-weight: bold;
 }
 .rightsec .list table tr .apct {
     display: inline-block;
     width: 82px; line-height: 38px;
     background-color: #b4bed0;
     color: #fff;
+    font-size: 14px;
+    font-weight: bold;
 }
 /* //신청태그 */
 /* //list */
@@ -728,6 +733,16 @@ nth
 /* //실종자수색 현황 page. */
 
 /* 실종사건정보 */
+<<<<<<< HEAD
+=======
+#main .rightsec .srch_tit {
+    text-align: center;
+}
+#main .rightsec .srch_tit h1 {
+    font-size: 34px;
+    padding-bottom: 40px;
+}
+>>>>>>> 85271278c7f1320f39019ece749c3f375d523959
 #main .rightsec .srch_tit figure {
     width: 184px; height: 184px;
     margin: 30px auto 24px auto;
@@ -783,6 +798,7 @@ nth
 /* 스와이퍼 */
   /* //스와이퍼 */
 
+<<<<<<< HEAD
 /* 수색신청관리 */
 .rightsec .list .ch_com {
     position: absolute;
@@ -817,6 +833,31 @@ nth
 
 
 
+=======
+/* 8보고사항관리 */
+.rightsec .list .tbl_btn {
+    position: absolute;
+    top: -52px; left: 0;
+}
+.rightsec .list .tbl_btn select {
+    width: 120px; line-height: 40px;
+    padding-left: 20px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+}
+.rightsec .list table tr td.name {
+    font-weight: bold;
+    color: #333;
+}
+/* //8보고사항관리 */
+
+/* 팝업창 */
+.layer_back { display: none; position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 1;}
+.confirm_layer { display: none; position: fixed; width: 416px; padding: 60px; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 2; background: #fff; text-align: center;}
+.confirm_layer .confirm_btn { margin-top: 28px;}
+.confirm_layer .confirm_btn a { display: inline-block; width: 120px; line-height: 40px; margin-right: 10px; border: 1px solid #062864; color: #062864s; font-weight: bold;}
+.confirm_layer .confirm_btn .confirm { background-color: #062864; color: #fff;}
+>>>>>>> 85271278c7f1320f39019ece749c3f375d523959
 
 
 

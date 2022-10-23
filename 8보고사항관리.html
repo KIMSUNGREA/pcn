@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <header>
         <div class="backg"></div>
         <div class="wrap">
@@ -125,19 +126,45 @@
             <div class="fcimg"></div>
             <dl>
                 <dt><strong>강민석</strong></dt>
-                <dd>수색자 · 혜화경찰서</dd>
+                <dd>최고관리자 · 경찰청</dd>
             </dl>
+            <h2>가양역 이익명 실종 수색</h2>
+            <ul>
+                <li>
+                    <a href="#">수색 진행상황</a>
+                </li>
+                <li>
+                    <a href="#">실종사건 정보</a>
+                </li>
+                <li>
+                    <a href="#">수색팀 관리</a>
+                    <ul class="acd">
+                        <li>
+                            <a href="#">수색 신청 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">일반수색자 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">임시사용자 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">보고사항 관리</a>
+                </li>
+            </ul>
         </div>
         <div class="rightsec">
-<<<<<<< HEAD
-            <div class="list_tit">
-                <div class="srch_tit">
-                    <h1>실종수색현황</h1>
-=======
             <div class="srch_tit">
-                <h1>실종수색현황</h1>
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
+                <h1>보고사항 관리</h1>
                 <form>
+                    <select name="pl" id="pl" class="pd">
+                        <option value="전체">분류</option>
+                        <option value="전체">수색물가지역</option>
+                        <option value="전체">대상자발견</option>
+                        <option value="전체">기타</option>
+                    </select>
                     <select name="pl" id="pl" class="pd">
                         <option value="전체">전체</option>
                         <option value="전체">사건명</option>
@@ -148,138 +175,88 @@
                     <button type="button" class="pd"></button>
                 </form>
             </div>
-            </div>
             <div class="list">
+                <div class="tbl_btn">
+                    <select name="분류" class="">
+                        <option value="전체">전체</option>
+                        <option value="전체">미처리</option>
+                        <option value="전체">처리완료</option>
+                    </select>
+                </div>
                 <table>
-                    <tr>
-                        <th>No.</th>
-                        <th>사건명</th>
-                        <th>관서</th>
-                        <th>책임자</th>
-                        <th>날짜</th>
-                        <th>신청</th>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>
-                            <a href="#">혜화역 강동욱 실종 수색</a>
-                        </td>
-                        <td>서울혜화경찰서</td>
-                        <td>이민철</td>
-                        <td>2022.09.05</td>
-                        <td>
-                            <a class="apc">신청</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>
-                            <a href="#">노원역 김동욱 실종 수색</a>
-                        </td>
-                        <td>서울노원경찰서</td>
-                        <td>강대수</td>
-                        <td>2022.09.01</td>
-                        <td>
-                            <a class="wait">대기중</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>
-                            <a href="#">태백 일가족 실종 수색</a>
-                        </td>
-                        <th>태백경찰서</th>
-                        <th>김철수</th>
-                        <th>2022.08.30</th>
-                        <td>
-                            <a class="ptp">참여중</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>
-                            <a href="#">양구 김익명 실종 수색</a>
-                        </td>
-                        <td>양구경찰서</td>
-                        <td>김영희</td>
-                        <td>2022.08.29</td>
-                        <td>
-                            <a class="apct">신청</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>
-                            <a href="#">애월읍 김동희 실종 수색</a>
-                        </td>
-                        <td>서귀포 경찰서</td>
-                        <td>이민철</td>
-                        <td>2022.08.17</td>
-                        <td>
-                            <a class="apct">신청</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>
-                            <a href="#">혜화역 강동욱 실종 수색</a>
-                        </td>
-                        <td>서울혜화경찰서</td>
-                        <td>이민철</td>
-                        <td>2022.08.17</td>
-                        <td>
-                            <a class="apc">신청</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>
-                            <a href="#">노원역 김동욱 실종 수색</a>
-                        </td>
-                        <td>서울노원경찰서</td>
-                        <td>강대수</td>
-                        <td>2022.08.02</td>
-                        <td>
-                            <a class="wait">대기중</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>
-                            <a href="#">태백 일가족 실종 수색</a>
-                        </td>
-                        <th>태백경찰서</th>
-                        <th>김철수</th>
-                        <th>2022.07.30</th>
-                        <td>
-                            <a class="ptp">참여중</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <a href="#">양구 김익명 실종 수색</a>
-                        </td>
-                        <td>양구경찰서</td>
-                        <td>김영희</td>
-                        <td>2022.07.22</td>
-                        <td>
-                            <a class="apct">신청</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <a href="#">애월읍 김동희 실종 수색</a>
-                        </td>
-                        <td>서귀포 경찰서</td>
-                        <td>김미희</td>
-                        <td>2022.07.21</td>
-                        <td>
-                            <a class="apct">신청</a>
-                        </td>
-                    </tr>
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: 34%;">
+                        <col style="width: 13%;">
+                        <col style="width: 9%;">
+                        <col style="width: 9%;">
+                        <col style="width: 15%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>No.</th>
+                            <th>분류</th>
+                            <th>제목</th>
+                            <th>사건명</th>
+                            <th>보고자</th>
+                            <th>날짜</th>
+                            <th>신청</th>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="name">수색불가지역</td>
+                            <td class="name">
+                                <a href="#">수색 불가지역입니다. 조치 부탁드립니다.</a>
+                            </td>
+                            <td>가양역 강익명 실종수색</td>
+                            <td>이민철</td>
+                            <td>1분 전</td>
+                            <td>
+                                <a class="wait">미처리</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="name">기타</td>
+                            <td class="name">
+                                <a href="#">실종자 소유 추정되는 물품 발견</a>
+                            </td>
+                            <td>군자역 김익명 실종수색</td>
+                            <td>강대수</td>
+                            <td>5분 전</td>
+                            <td>
+                                <a class="wait">미처리</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="name">수색불가능상황</td>
+                            <td class="name">
+                                <a href="#">수색이 불가능합니다.</a>
+                            </td>
+                            <td>가양역 강익명 실종수색</td>
+                            <td>김철수</td>
+                            <td>17분 전</td>
+                            <td>
+                                <a class="wait">미처리</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="name">대상자발견</td>
+                            <td class="name">
+                                <a href="#">실종자 발견했습니다.</a>
+                            </td>
+                            <td>가양역 강익명 실종수색</td>
+                            <td>김영희</td>
+                            <td>20분전</td>
+                            <td>
+                                <a class="ptp">처리완료</a>
+                            </td>
+                        </tr>
                 </table>
+                </tbody>
                 <div class="number_list">
                     <div class="num">
                         <a href="#" class="btn_prev"></a>

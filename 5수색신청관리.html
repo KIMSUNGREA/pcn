@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <!-- 팝업창 -->
+    <div class="layer_back"></div>
+    <div class="confirm_layer">
+        <p>선택한 수색 신청을 승인하시겠습니까?</p>
+        <div class="confirm_btn">
+            <a href="#" class="confirm">확인</a>
+            <a href="#" class="cancel">취소</a>
+        </div>
+    </div>
+    <!-- 팝업창 end -->
     <header>
         <div class="backg"></div>
         <div class="wrap">
@@ -159,8 +169,13 @@
                 <h1>수색 신청 관리</h1>
             </div>
             <div class="list">
+<<<<<<< HEAD
                 <div class="ch_com">
                     <a href="#">선택승인하기</a>
+=======
+                <div class="tbl_top_btn">
+                    <a href="#" class="btn">선택 승인하기</a>
+>>>>>>> 85271278c7f1320f39019ece749c3f375d523959
                 </div>
                 <table>
                     <colgroup>
@@ -337,6 +352,7 @@
             $(".submenu1").slideUp(300);
         });
 
+<<<<<<< HEAD
         $(".leftsec > ul > li:nth-child(3)").on("mouseover", function () {
             $(".acd").slideDown(300);
         });
@@ -344,6 +360,15 @@
             $(".acd").slideUp(300);
         });
         
+=======
+        $(".btn").click(function () {
+            $(".layer_back, .confirm_layer").stop().fadeIn();
+        });
+        $(".cancel").click(function () {
+            $(".layer_back, .confirm_layer").stop().fadeOut();
+        });
+
+>>>>>>> 85271278c7f1320f39019ece749c3f375d523959
     </script>
 </body>
 
