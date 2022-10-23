@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경찰청</title>
+    <title>실종수색현황</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -127,16 +127,11 @@
                 <dt><strong>강민석</strong></dt>
                 <dd>수색자 · 혜화경찰서</dd>
             </dl>
+            <div class="left_bk"></div>
         </div>
         <div class="rightsec">
-<<<<<<< HEAD
-            <div class="list_tit">
                 <div class="srch_tit">
                     <h1>실종수색현황</h1>
-=======
-            <div class="srch_tit">
-                <h1>실종수색현황</h1>
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
                 <form>
                     <select name="pl" id="pl" class="pd">
                         <option value="전체">전체</option>
@@ -147,7 +142,6 @@
                     <input type="search" class="pd" placeholder="검색어를 입력해주세요.">
                     <button type="button" class="pd"></button>
                 </form>
-            </div>
             </div>
             <div class="list">
                 <table>
@@ -323,67 +317,7 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        $(".gnb > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-            $(".gnb > ul > li").removeClass("bold");
-        });
-        $(".log > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-        });
-
-
-        $(function () {
-            $(".gauge .gaugebar").addClass("gon1")
-        });
-
-    </script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

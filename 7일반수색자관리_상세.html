@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경찰청</title>
+    <title>일반수색자관리_상세</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -156,9 +156,9 @@
             <div class="left_bk"></div>
         </div>
         <div class="rightsec">
-                <div class="srch_tit">
-                    <h1>일반수색자 관리</h1>
-                </div>
+            <div class="srch_tit">
+                <h1>일반수색자 관리</h1>
+            </div>
             <div class="srch_info">
                 <dl>
                     <dt><strong>아이디</strong></dt>
@@ -201,70 +201,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        $(".gnb > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-            $(".gnb > ul > li").removeClass("bold");
-        });
-        $(".log > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-        });
-
-        $(".leftsec > ul > li:nth-child(3)").on("mouseover", function () {
-            $(".acd").stop().slideDown(300);
-        });
-        $(".leftsec > ul > li:nth-child(3)").on("mouseleave", function () {
-            $(".acd").stop().slideUp(300);
-        });
-
-    </script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

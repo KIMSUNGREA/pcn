@@ -31,19 +31,25 @@ ul:after, .wrap:after, .cl:after {
 }
 /* //리셋코드 */
 
-<<<<<<< HEAD
-/* common */
-#main { display: flex; position: relative;}
-#main .leftsec { width: 280px; height: 100vh; color: #fff; text-align: center; padding: 0 30px; box-sizing: border-box; position: relative;}
+
+/* common 공통 */
+header { height: 80px; background-color: #000; position: relative; }
+header .backg { width: 100%; height: 390px; position: absolute; top: 80px; background-color: #333; z-index: 1; display: none; }
+header .backg.backon { display: block; }
+header h1 { padding-top: 22px; }
+header .gnb { position: absolute; top: 0; left: 420px; color: #fff; }
+header .gnb > ul > li { float: left; position: relative; }
+header .gnb > ul > li:nth-child(9):after { content: ""; display: block; width: 1px; height: 10px; background-color: #fff; position: absolute; top: 35px; right: 0; }
+header .gnb > ul > li > a { display: block; line-height: 80px; margin-right: 40px; font-size: 16px; }
+
+#main { position: relative;}
+#main .leftsec { width: 280px; height: 100%; float: left; color: #fff; text-align: center; padding: 0 30px; box-sizing: border-box; position: relative;}
 #main .leftsec .left_bk { background: #062864; height: 100%; left: 0; position: fixed; top: 0; width: 280px; z-index: -1;}
 #main .leftsec h2 { padding: 70px 0 20px 0;}
-#main .rightsec { width: calc(100% - 280px); background: #edf0f5; padding: 10px; position: relative;}
+#main .rightsec { width: calc(100% - 280px); float: right; background: #edf0f5; padding: 10px; position: relative; box-sizing: border-box;}
 #main .rightsec .srch_tit { text-align: center; }
 #main .rightsec .srch_tit h1 { font-size: 34px;}
-
 /* //common */
-=======
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
 
 
 /* login */
@@ -143,55 +149,9 @@ form .password input {
     margin-top: 50px;
     cursor: pointer;
 }
-
 /* //login */
 
-/* 공통 header */
-header {
-    height: 80px;
-    background-color: #000;
-    position: relative;
-}
-header .backg {
-    width: 100%; height: 390px;
-    position: absolute;
-    top: 80px;
-    background-color: #333;
-    z-index: 1;
-    display: none;
-}
-header .backg.backon {
-    display: block;
-}
-header h1 {
-    padding-top: 22px;
-}
-header .gnb {
-    position: absolute;
-    top: 0; left: 420px;
-    color: #fff;
-}
-header .gnb > ul > li {
-    float: left;
-    position: relative;
-}
-header .gnb > ul > li:nth-child(9):after {
-    content: "";
-    display: block;
-    width: 1px; height: 10px;
-    background-color: #fff;
-    position: absolute;
-    top: 35px; right: 0;
-}
-header .gnb > ul > li > a {
-    display: block;
-    line-height: 80px;
-    margin-right: 40px;
-    font-size: 16px;
-}
-header .gnb > ul > li > a.bold {
 
-} 
 /* 메인 메뉴 font-weight */
 header .gnb > ul > li > a.this {
     font-weight: bold;
@@ -298,7 +258,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 }
 /* //공통 header */
 
-/* 메인 페이지 (mainpage.html) */
+/* 최고관리자_메인 */
 #main .leftsec .fcimg {
     width: 120px; height: 120px;
     background: url(../images/레이어-6---Assistor.jpg) no-repeat;
@@ -313,17 +273,6 @@ header .timelog .log > ul > li:nth-child(1):after {
     padding-top: 14px;
 }
 /* rightsec .conut */
-.rightsec h2 {
-    font-size: 18px;
-    font-weight: 600;
-}
-.rightsec h2 > i {
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    top: 1px;
-    left: 4px;
-}
 .rightsec .count {
     background: #f8cc3c;
 }
@@ -534,7 +483,8 @@ header .timelog .log > ul > li:nth-child(1):after {
     padding: 20px 24px;
     outline: none;
 }
-/* //list_tit */
+/* //.srch_tit */
+
 /* list */
 .rightsec .list {
     margin-top: 84px;
@@ -675,6 +625,10 @@ nth
     font-weight: 600;
     margin: 65px 0 80px;
 }
+#main .rightsec .srch_tit figure {
+    width: 186px; height: 186px;
+    margin: 0 auto;
+}
 #main .rightsec .user_intp {
     position: relative;
 }
@@ -733,8 +687,6 @@ nth
 /* //실종자수색 현황 page. */
 
 /* 실종사건정보 */
-<<<<<<< HEAD
-=======
 #main .rightsec .srch_tit {
     text-align: center;
 }
@@ -742,7 +694,6 @@ nth
     font-size: 34px;
     padding-bottom: 40px;
 }
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
 #main .rightsec .srch_tit figure {
     width: 184px; height: 184px;
     margin: 30px auto 24px auto;
@@ -761,6 +712,7 @@ nth
 #main .rightsec .user_data {
     display: flex;
     text-align: center;
+    margin-top: 50px;
 }
 #main .rightsec .user_data dl {
     position: relative;
@@ -794,11 +746,6 @@ nth
     padding: 50px 0;
 }
 
-
-/* 스와이퍼 */
-  /* //스와이퍼 */
-
-<<<<<<< HEAD
 /* 수색신청관리 */
 .rightsec .list .ch_com {
     position: absolute;
@@ -818,6 +765,7 @@ nth
 /* //수색신청관리 */
 
 /* 일반수색자관리 */
+
 /* //일반수색자관리 */
 
 /* 7일반수색자관리_상세 */
@@ -830,10 +778,6 @@ nth
 /* //7일반수색자관리_상세 */
 
 
-
-
-
-=======
 /* 8보고사항관리 */
 .rightsec .list .tbl_btn {
     position: absolute;
@@ -857,7 +801,7 @@ nth
 .confirm_layer .confirm_btn { margin-top: 28px;}
 .confirm_layer .confirm_btn a { display: inline-block; width: 120px; line-height: 40px; margin-right: 10px; border: 1px solid #062864; color: #062864s; font-weight: bold;}
 .confirm_layer .confirm_btn .confirm { background-color: #062864; color: #fff;}
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
+
 
 
 

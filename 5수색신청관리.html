@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경찰청</title>
+    <title>수색신청관리</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -163,19 +163,15 @@
                     <a href="#">보고사항 관리</a>
                 </li>
             </ul>
+            <div class="left_bk"></div>
         </div>
         <div class="rightsec">
             <div class="srch_tit">
                 <h1>수색 신청 관리</h1>
             </div>
             <div class="list">
-<<<<<<< HEAD
-                <div class="ch_com">
-                    <a href="#">선택승인하기</a>
-=======
                 <div class="tbl_top_btn">
                     <a href="#" class="btn">선택 승인하기</a>
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
                 </div>
                 <table>
                     <colgroup>
@@ -190,7 +186,7 @@
                         <tr>
                             <th>
                                 <input type="checkbox" name="srchchk" id="chkAll">
-                                <label for="chkAll">전체선택</label> 
+                                <label for="chkAll">전체선택</label>
                             </th>
                             <th>아이디</th>
                             <th>수색자명</th>
@@ -200,59 +196,59 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="srchchk" id="chk1">
-                            <label for="chk1">선택</label> 
-                        </td>
-                        <td>abcde</td>
-                        <td>포돌이</td>
-                        <td>보안과</td>
-                        <td>010-1111-2222</td>
-                        <td>
-                            <a href="#" class="">승인</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="srchchk" id="chk2">
-                            <label for="chk2">선택</label> 
-                        </td>
-                        <td>naver</td>
-                        <td>김성래</td>
-                        <td>보안과</td>
-                        <td>010-1111-2222</td>
-                        <td>
-                            <a href="#" class="">승인해제</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="srchchk" id="chk3">
-                            <label for="chk3">선택</label> 
-                        </td>
-                        <td>PCN</td>
-                        <td>마동석</td>
-                        <td>보안과</td>
-                        <td>010-1111-2222</td>
-                        <td>
-                            <a href="#" class="">승인</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" name="srchchk" id="chk4">
-                            <label for="chk4">선택</label> 
-                        </td>
-                        <td>google</td>
-                        <td>강해상</td>
-                        <td>보안과</td>
-                        <td>010-1111-2222</td>
-                        <td>
-                            <a href="#" class="">승인해제</a>
-                        </td>
-                    </tr>
-                </tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="srchchk" id="chk1">
+                                <label for="chk1">선택</label>
+                            </td>
+                            <td>abcde</td>
+                            <td>포돌이</td>
+                            <td>보안과</td>
+                            <td>010-1111-2222</td>
+                            <td>
+                                <a href="#" class="">승인</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="srchchk" id="chk2">
+                                <label for="chk2">선택</label>
+                            </td>
+                            <td>naver</td>
+                            <td>김성래</td>
+                            <td>보안과</td>
+                            <td>010-1111-2222</td>
+                            <td>
+                                <a href="#" class="">승인해제</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="srchchk" id="chk3">
+                                <label for="chk3">선택</label>
+                            </td>
+                            <td>PCN</td>
+                            <td>마동석</td>
+                            <td>보안과</td>
+                            <td>010-1111-2222</td>
+                            <td>
+                                <a href="#" class="">승인</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="srchchk" id="chk4">
+                                <label for="chk4">선택</label>
+                            </td>
+                            <td>google</td>
+                            <td>강해상</td>
+                            <td>보안과</td>
+                            <td>010-1111-2222</td>
+                            <td>
+                                <a href="#" class="">승인해제</a>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
                 <div class="number_list">
                     <div class="num">
@@ -296,80 +292,8 @@
         </div>
     </section>
 
+    <script src="js/common.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        $(".gnb > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-            $(".gnb > ul > li").removeClass("bold");
-        });
-        $(".log > ul > li").on("mouseover", function () {
-            $(".backg").slideDown(300);
-            $(".submenu1").slideDown(300);
-            $(this).addClass("bold").siblings().removeClass("bold");
-        });
-
-        $("header").on("mouseleave", function () {
-            $(".backg").slideUp(300);
-            $(".submenu1").slideUp(300);
-        });
-
-<<<<<<< HEAD
-        $(".leftsec > ul > li:nth-child(3)").on("mouseover", function () {
-            $(".acd").slideDown(300);
-        });
-        $(".leftsec > ul > li:nth-child(3)").on("mouseleave", function () {
-            $(".acd").slideUp(300);
-        });
-        
-=======
-        $(".btn").click(function () {
-            $(".layer_back, .confirm_layer").stop().fadeIn();
-        });
-        $(".cancel").click(function () {
-            $(".layer_back, .confirm_layer").stop().fadeOut();
-        });
-
->>>>>>> 85271278c7f1320f39019ece749c3f375d523959
-    </script>
 </body>
 
 </html>
