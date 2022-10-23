@@ -31,6 +31,18 @@ ul:after, .wrap:after, .cl:after {
 }
 /* //리셋코드 */
 
+/* common */
+#main { display: flex; position: relative;}
+#main .leftsec { width: 280px; height: 100vh; color: #fff; text-align: center; padding: 0 30px; box-sizing: border-box; position: relative;}
+#main .leftsec .left_bk { background: #062864; height: 100%; left: 0; position: fixed; top: 0; width: 280px; z-index: -1;}
+#main .leftsec h2 { padding: 70px 0 20px 0;}
+#main .rightsec { width: calc(100% - 280px); background: #edf0f5; padding: 10px; position: relative;}
+#main .rightsec .srch_tit { text-align: center; }
+#main .rightsec .srch_tit h1 { font-size: 34px;}
+
+/* //common */
+
+
 /* login */
 .login {
     width: 410px; height: 530px;
@@ -284,18 +296,6 @@ header .timelog .log > ul > li:nth-child(1):after {
 /* //공통 header */
 
 /* 메인 페이지 (mainpage.html) */
-#main {
-    display: flex;
-    position: relative;
-}
-#main .leftsec {
-    width: 16%;
-    background-color: #062864;
-    color: #fff;
-    text-align: center;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
 #main .leftsec .fcimg {
     width: 120px; height: 120px;
     background: url(../images/레이어-6---Assistor.jpg) no-repeat;
@@ -308,11 +308,6 @@ header .timelog .log > ul > li:nth-child(1):after {
 }
 #main .leftsec dl dd {
     padding-top: 14px;
-}
-.rightsec {
-    width: 85%;
-    background: #edf0f5;
-    padding: 10px;
 }
 /* rightsec .conut */
 .rightsec h2 {
@@ -518,6 +513,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 .rightsec .list_tit form {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 .rightsec .list_tit form select {
     width: 180px;
@@ -546,6 +542,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 .rightsec .list {
     margin-top: 84px;
     background-color: #fff;
+    position: relative;
 }
 .rightsec .list table {
     width: 100%;
@@ -623,7 +620,7 @@ header .timelog .log > ul > li:nth-child(1):after {
 
 
 
-
+nth
 
 
 /* 실종자수색 현황 page. */
@@ -636,6 +633,13 @@ header .timelog .log > ul > li:nth-child(1):after {
     border-top: 1px solid #fff;
     position: relative;
     text-align: left;
+    font-size: 16px;
+}
+#main .leftsec  ul  li a.tbold {
+    font-weight: bold;
+}
+#main .leftsec > ul > li a:hover {
+    font-weight: bold;
 }
 #main .leftsec > ul > li:after {
     content: "";
@@ -643,8 +647,7 @@ header .timelog .log > ul > li:nth-child(1):after {
     width: 7px; height: 13px; 
     background: url(../images/lnb_arrow.png) no-repeat;
     position: absolute; 
-    top: 0; right: 12px; bottom: 0;
-    margin: auto 0;
+    top: 26px; right: 12px;
     transition: all 0.3s;
 }
 #main .leftsec > ul > li:hover:after {
@@ -655,6 +658,9 @@ header .timelog .log > ul > li:nth-child(1):after {
 }
 #main .leftsec > ul > li .acd {
     display: none;
+}
+#main .leftsec > ul > li .acd li {
+    margin-top: 12px;
 }
 
 /* rightsec 실종수색현황*/
@@ -722,12 +728,6 @@ header .timelog .log > ul > li:nth-child(1):after {
 /* //실종자수색 현황 page. */
 
 /* 실종사건정보 */
-#main .rightsec .srch_tit {
-    text-align: center;
-}
-#main .rightsec .srch_tit h1 {
-    font-size: 34px;
-}
 #main .rightsec .srch_tit figure {
     width: 184px; height: 184px;
     margin: 30px auto 24px auto;
@@ -781,33 +781,37 @@ header .timelog .log > ul > li:nth-child(1):after {
 
 
 /* 스와이퍼 */
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   /* //스와이퍼 */
+
+/* 수색신청관리 */
+.rightsec .list .ch_com {
+    position: absolute;
+    top: -60px; right: 0;
+}
+.rightsec .list .ch_com a {
+    display: block;
+    padding: 12px 30px;
+    background-color: #062864;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.rightsec .list table label {
+    display: none;
+}
+/* //수색신청관리 */
+
+/* 일반수색자관리 */
+/* //일반수색자관리 */
+
+/* 7일반수색자관리_상세 */
+#main .rightsec .srch_info {
+    width: 580px;
+    padding: 60px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+/* //7일반수색자관리_상세 */
 
 
 
