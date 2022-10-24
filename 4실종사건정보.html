@@ -8,7 +8,9 @@
     <title>실종사건정보</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -16,9 +18,7 @@
         <div class="backg"></div>
         <div class="wrap">
             <h1>
-                <a href="#">
-                    <img src="images/plogo.png" alt="로고">
-                </a>
+                <a href="#">실종수색 상황관리 시스템 관리자</a>
             </h1>
             <div class="gnb">
                 <ul>
@@ -212,12 +212,34 @@
             </div>
             <div class="pict">
                 <h2>실종 사진 자료</h2>
-                
+                <div class="slide_box">
+                    <div class="inner">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="images/evid_pic01.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="images/evid_pic02.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="images/evid_pic03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="images/evid_pic04.jpg" alt=""></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <script src="js/common.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 'auto'
+      });
+    </script>
 </body>
 
 </html>
