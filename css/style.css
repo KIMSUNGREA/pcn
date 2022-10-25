@@ -882,6 +882,35 @@ nth
 
 
 
+/* 실종수색사건관리 */
+#main .rightsec .srch_tit fieldset { display: flex; justify-content: center; border: none;}
+#main .rightsec .srch_tit fieldset .datepicker { display: flex; width: 278px; height: 60px; margin-right: 6px; border: 1px solid #dddfe3; background: #fff;}
+#main .rightsec .srch_tit fieldset .datepicker .date_op { width: 50%;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+    background: url(../images/arrow_calr_l.png) center no-repeat;
+}
+.ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
+    background: url(../images/arrow_calr_r.png) center no-repeat;
+}
+.date_op img {
+    left: 20px; margin-top: -11px; position: absolute; top: 50%;
+}
