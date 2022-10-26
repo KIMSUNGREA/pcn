@@ -62,16 +62,11 @@ header .gnb > ul > li > a { display: block; line-height: 80px; margin-right: 40p
     transform: translate(-50%, -50%); 
 }
 
-.login .tit .img {
-    background: url(../images/cplogo.png) no-repeat center;
-    background-size: 160px auto;
-    height: 160px;
-}
-
 .login .tit h1 {
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    padding-top: 190px;
+    background: url(../images/login_logo.png) no-repeat center top;
 }
 form .id {
     margin: 50px 0 10px 0;
@@ -115,7 +110,7 @@ form .password input {
     cursor: pointer;
 }
 .user .idrem input[type="checkbox"]:checked + label {
-    background: url(../images/chks_on.png) 2px no-repeat;
+    background: url(../images/chk_on.png) 2px no-repeat;
 }
 
 
@@ -887,24 +882,6 @@ nth
 #main .rightsec .srch_tit fieldset .datepicker { display: flex; width: 278px; height: 60px; margin-right: 6px; border: 1px solid #dddfe3; background: #fff;}
 #main .rightsec .srch_tit fieldset .datepicker .date_op { width: 50%;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
     background: url(../images/arrow_calr_l.png) center no-repeat;
 }
@@ -914,3 +891,54 @@ nth
 .date_op img {
     left: 20px; margin-top: -11px; position: absolute; top: 50%;
 }
+
+
+/* 실종수색정보수정 */
+.list_input_wrap {
+    background: #fff;
+    border: 1px solid #dddfe3;
+    border-radius: 8px;
+    height: auto;
+    margin: -30px auto 0;
+    overflow: hidden;
+    padding: 25px 0 50px;
+    position: relative;
+    width: 680px;
+}
+.list_input_wrap:before {
+    content: "";
+    width: 193px; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: #f8f9fb;
+}
+
+.list_input_wrap dl { height: 60px; position: relative; display: flex;}
+.list_input_wrap dl dt { width: 193px; line-height: 60px; color: #333; padding: 0 30px; box-sizing: border-box;}
+.list_input_wrap dl dd { width: calc(100% - 193px); box-sizing: border-box; padding: 0 30px; position: relative;}
+.list_input_wrap .dd_inner { border: 1px solid #dddfe3; box-sizing: border-box; height: 60px; position: relative;}
+.list_input_wrap .dd_inner.bno { border-bottom: 0;}
+.list_input_wrap .dd_inner input {
+    border: 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    padding: 0 20px;
+    width: calc(100% - 88px);
+    box-sizing: border-box;
+}
+.list_input_wrap .dd_inner input.pull { width: 100%;}
+.list_input_wrap dl dd p { padding-left: 20px; line-height: 60px; font-weight: 700;}
+.list_input_wrap dl dd .btn_srch_again { width: 80px; line-height: 30px; font-weight: 500; background: #ff771c; color: #fff; display: block; text-align: center; border-radius: 15px; position: absolute; right: 30px; top: 15px;}
+
+.list_input_wrap .dd_inner .btn_pick_upload { position: absolute; top: 15px; right: 40px;}
+.list_input_wrap .dd_inner .btn_pick_upload input { width: 0; height: 0; position: absolute; top: 0; left: 0; opacity: 0;}
+.list_input_wrap .dd_inner .btn_pick_upload label { display: block; width: 80px; line-height: 30px; background: #062864; border-radius: 15px; text-align: center; color: #fff; cursor: pointer;}
+
+
+
+
+
+
+

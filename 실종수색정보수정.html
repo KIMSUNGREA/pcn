@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보고사항관리</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    //제이쿼리 style css
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    //제이쿼리 js
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    //제이쿼리 ui js
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="backg"></div>
+        <div class="wrap">
+            <h1>
+                <a href="#">실종수색 상황관리 시스템 관리자</a>
+            </h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">전체 통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="this">실종수색 현황</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">수색 진행상황</a>
+                            </li>
+                            <li>
+                                <a href="#">수색 범위 설정</a>
+                            </li>
+                            <li>
+                                <a href="#">수색팀 관리</a>
+                                <ul class="submenu2">
+                                    <li>
+                                        <a href="#">수색 신청 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">일반 수색자 관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">임시 수색자 관리</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">실종 사건 정보</a>
+                            </li>
+                            <li>
+                                <a href="#">보고사항 관리<br>(해당사건)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">실종수색 관리</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">실종 수색 등록</a>
+                            </li>
+                            <li>
+                                <a href="#">실종 수색 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">관리자 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">게시판 관리</a>
+                        <ul class="submenu1">
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">전체 보고사항</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">로그 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">로그인 정책 관리</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="timelog">
+                <div class="time">
+                    <i class="xi-alarm-o"></i><span>28분 30초</span><button>연장</button>
+                </div>
+                <div class="log">
+                    <ul>
+                        <li>
+                            <a href="#">마이페이지</a>
+                            <ul class="submenu1">
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">1:1문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="leftsec">
+            <div class="fcimg"></div>
+            <dl>
+                <dt><strong>강민석</strong></dt>
+                <dd>최고관리자 · 경찰청</dd>
+            </dl>
+            <ul>
+                <li>
+                    <a href="#">실종수색 등록</a>
+                </li>
+                <li>
+                    <a href="#" class="tbold">실종 수색 사건 관리</a>
+                </li>
+            </ul>
+            <div class="left_bk"></div>
+        </div>
+        <div class="rightsec">
+            <div class="srch_tit">
+                <h1>실종 수색 사건 관리</h1>
+            </div>
+            <div class="list_input_wrap">
+                <dl>
+                    <dt>사건명</dt>
+                    <dd>
+                        <div class="dd_inner">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>수색상태</dt>
+                    <dd>
+                        <p>종료</p>
+                        <a href="#" class="btn_srch_again">수색재개</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 명</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>사건명</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>사건명</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요.">
+                            <div class="btn_pick_upload">
+                                <input type="file" id="picup" name="">
+                                <label for="picup">업로드</label>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>실종자 사진</dt>
+                    <dd>
+                        <div class="dd_inner bno">
+                            <input type="text" name="" id="" placeholder="사건명을 입력해 주세요." class="pull">
+                        </div>
+                    </dd>
+                </dl>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="js/common.js"></script>
+    <!-- script -->
+</body>
+
+</html>
