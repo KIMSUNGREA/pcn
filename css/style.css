@@ -880,7 +880,9 @@ nth
 /* 실종수색사건관리 */
 #main .rightsec .srch_tit fieldset { display: flex; justify-content: center; border: none;}
 #main .rightsec .srch_tit fieldset .datepicker { display: flex; width: 278px; height: 60px; margin-right: 6px; border: 1px solid #dddfe3; background: #fff;}
-#main .rightsec .srch_tit fieldset .datepicker .date_op { width: 50%;}
+#main .rightsec .srch_tit fieldset .datepicker .date_op { width: 50%; height: 58px; padding-left: 44px; position: relative;}
+#main .rightsec .srch_tit fieldset .datepicker .date_op p { position: absolute; font-size: 14px; top: 19px; right: 0;}
+#main .rightsec .srch_tit fieldset .datepicker .date_op input { vertical-align: top; border: 0; height: 100%; text-align: right; width: 76px;}
 
 .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
     background: url(../images/arrow_calr_l.png) center no-repeat;
@@ -891,6 +893,10 @@ nth
 .date_op img {
     left: 20px; margin-top: -11px; position: absolute; top: 50%;
 }
+
+/* 데이터 피커 스킨 */
+
+/* 데이터 피커 스킨 end*/
 
 
 /* 실종수색정보수정 */
@@ -955,3 +961,19 @@ nth
 .srch_main dl dd ul li span { width: calc(100% - 105px); padding: 0 20px; box-sizing: border-box;}
 .srch_main dl dd ul li .vol { width: 105px; padding: 0;}
 .srch_main dl dd ul li a { display: block; width: 16px; height: 16px; background: url(../images/btn_file_del.png) no-repeat; position: absolute; top: 0; right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

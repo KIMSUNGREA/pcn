@@ -1,5 +1,7 @@
 @media (max-width:800px) { /* 모바일용 */
     .pc {display: none !important ;}
+    /* 4. 실종사건정보 */
+    .m_wrap { width: 94%;}
 }
 
 
