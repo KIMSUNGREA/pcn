@@ -1,0 +1,3 @@
+$('#ckkAll').on('click', function(){
+    $()
+})

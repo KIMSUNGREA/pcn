@@ -879,10 +879,19 @@ nth
 
 /* 실종수색사건관리 */
 #main .rightsec .srch_tit fieldset { display: flex; justify-content: center; border: none;}
-#main .rightsec .srch_tit fieldset .datepicker { display: flex; width: 278px; height: 60px; margin-right: 6px; border: 1px solid #dddfe3; background: #fff;}
+#main .rightsec .srch_tit .filter_tab { font-size: 0; text-align: center; margin-bottom: 36px;}
+#main .rightsec .srch_tit .filter_tab a { font-size: 20px; font-weight: 500; display: inline-block; margin: 0 14px;}
+#main .rightsec .srch_tit .filter_tab a.on { font-weight: 800; border-bottom: 3px solid #333;}
+#main .rightsec .srch_tit .filter_tab a:hover { font-weight: 800; border-bottom: 3px solid #333;}
+#main .rightsec .srch_tit fieldset .datepicker { display: flex; width: 278px; height: 58px; margin-right: 6px; border: 1px solid #dddfe3; background: #fff;}
 #main .rightsec .srch_tit fieldset .datepicker .date_op { width: 50%; height: 58px; padding-left: 44px; position: relative;}
 #main .rightsec .srch_tit fieldset .datepicker .date_op p { position: absolute; font-size: 14px; top: 19px; right: 0;}
 #main .rightsec .srch_tit fieldset .datepicker .date_op input { vertical-align: top; border: 0; height: 100%; text-align: right; width: 76px;}
+#main .rightsec fieldset select { background-color: #fff; width: 180px; height: 60px; padding-left: 20px; box-sizing: border-box; border: 1px solid #dddfe3}
+#main .rightsec fieldset .pd { box-sizing: border-box; border: 1px solid #dddfe3}
+#main .rightsec fieldset .srch_box_wrap { position: relative; width: 548px; text-align: left;}
+#main .rightsec fieldset .srch_box_wrap input { width: 488px; height: 60px; vertical-align: top; border-left: 0; box-sizing: border-box; padding: 0 20px;}
+#main .rightsec fieldset .srch_box_wrap .srch_btn { position: absolute; top: 0; right: 0; display: block; width: 60px; height: 60px; background: url(../images/icon_search.png) no-repeat center #062864;}
 
 .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
     background: url(../images/arrow_calr_l.png) center no-repeat;
@@ -893,6 +902,8 @@ nth
 .date_op img {
     left: 20px; margin-top: -11px; position: absolute; top: 50%;
 }
+#main .rightsec .srch_tit fieldset 
+
 
 /* 데이터 피커 스킨 */
 
@@ -962,9 +973,10 @@ nth
 .srch_main dl dd ul li .vol { width: 105px; padding: 0;}
 .srch_main dl dd ul li a { display: block; width: 16px; height: 16px; background: url(../images/btn_file_del.png) no-repeat; position: absolute; top: 0; right: 0;}
 
-
-
-
+/* 퍼블1101 */
+#main .rightsec fieldset .inst_name { border: 1px solid #dddfe3; padding: 0 20px 0 45px; background: url(../images/icon_search_g.png) 20px center no-repeat #fff; width: 180px; box-sizing: border-box; border-right: 0;}
+#main .rightsec .list .tab_top_btn { position: absolute; right: 0; top: -48px;}
+#main .rightsec .list .tab_top_btn a { display: block; width: 140px; line-height: 38px; background: #062864; color: #fff; text-align: center; }
 
 
 
