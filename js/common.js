@@ -144,6 +144,22 @@ $('input[name="srchchk"]').click(function(){
 
 
 
+// 모바일 로그인
+$(".btn_login_type a").click(function(){
+	$(".btn_login_type a").removeClass("on");
+	$(this).addClass("on");
+});
+$(".nomal").click(function(){
+	$(".btn_temp_login").removeClass("show")
+	$(".save_id").show();
+	$(".btn_login").removeClass("mgt")
+});
+$(".tempo").click(function(){
+	$(".btn_temp_login").addClass("show");
+	$(".save_id").hide();
+	$(".btn_login").addClass("mgt")
+});
+
 
 
 
