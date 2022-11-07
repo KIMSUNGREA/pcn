@@ -82,6 +82,7 @@ section,
 article,
 aside,
 footer { display:block; }
+ul:after { content: ""; clear: both; display: block;}
 /* CSS초기화 end */
 
 /* login */
@@ -124,13 +125,50 @@ form > a { display: block; width: 100%; line-height: 120px; background: #062865;
 .srch_map_area { position: relative; width: 100%; height: 100vh; min-height: 38px;}
 .srch_map_area .srch_map { width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
 .srch_map_area .map_header { position: absolute; width: 100%; height: 90px; top: 60px; left: 0; z-index: 5; padding: 0 30px;}
-.srch_map_area .map_header .click_btn { border: 1px solid #062865; line-height: 88px; color: #333; font-weight: 700; padding: 0 37px; }
+.srch_map_area .map_header .click_btn { box-shadow: 0 4px 16px rgb(0 0 0 / 20%); font-size: 28px; font-weight: 700; background: #fff; border: 3px solid #062865; border-radius: 45px; width: 559px; line-height: 84px; color: #333; font-weight: 700; padding: 0 37px; display: inline-block;}
+.srch_map_area .map_header .menu_btn { display: block; width: 90px; height: 90px; border-radius: 100%; text-indent: -20000px; box-shadow: 0 4px 16px rgb(0 0 0 / 20%); float: right; background: #fff url(../images/btn_ham.png) no-repeat center;}
+
+.zoom_btn { position: fixed; right: 30px; bottom: 240px;}
+.zoom_btn a { display: block; width: 96px; height: 96px; border-radius: 100%; text-indent: -20000px; box-shadow: 0 4px 16px rgb(0 0 0 / 20%);}
+.zoom_btn a:nth-of-type(1) { margin-bottom: 20px; background: #fff url(../images/btn_zoom_out.png) center no-repeat;}
+.zoom_btn a:nth-of-type(2) { margin-bottom: 20px; background: #fff url(../images/btn_zoom_in.png) center no-repeat;}
+.zoom_btn a:nth-of-type(3) { background: #fff url(../images/btn_target.png) center no-repeat;}
+
+.srch_btn_menu { position: absolute; bottom: 0; width: 100%; text-align: center;}
+.srch_btn_menu ul li { width: 20%; float: left; height: 140px;}
+.srch_btn_menu ul li a { display: block; width: 100%; height: 100%; color: #fff; font-size: 22px; font-weight: 700; box-sizing: border-box; padding-top: 98px;}
+.srch_btn_menu ul li:nth-child(1) a { background:  #062865 url(../images/srch_btm_menu01.png) no-repeat center 22px;} 
+.srch_btn_menu ul li:nth-child(2) a { background:  #062865 url(../images/srch_btm_menu02.png) no-repeat center 22px;} 
+.srch_btn_menu ul li:nth-child(3) a { background:  #062865 url(../images/srch_btm_menu03.png) no-repeat center 22px;} 
+.srch_btn_menu ul li:nth-child(4) a { background:  #062865 url(../images/srch_btm_menu04.png) no-repeat center 22px;} 
+.srch_btn_menu ul li:nth-child(5) a { background:  #f9cc3d url(../images/srch_btm_menu05.png) no-repeat center 22px;} 
 
 
 
+/* 팝업 */
+.menu_backg { position: fixed; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.5); display: none;}
+.hbg_menu_wrap { width: 560px; height: 100%; background: #fff; position: fixed; right: -600px; top: 0; z-index: 99; }
+.hbg_menu_wrap .menu_cont { width: 100%; height: 100%; position: relative; overflow-y: auto; z-index: 15;} 
+.hbg_menu_wrap .menu_cont header { height: 120px; position: relative;}
+.hbg_menu_wrap .menu_cont header a { text-indent: -20000px; display: inline-block; position: absolute; top: 50%;} 
+.hbg_menu_wrap .menu_cont header .alarm_bell { width: 44px; height: 51px; background: url(../images/icon_bell.png) no-repeat; transform: translateY(-50%); left: 40px;}
+.hbg_menu_wrap .menu_cont header .alarm_bell:after { content: ""; display: block; width: 8px; height: 8px; background: #f32424; position: absolute; top: 0; right: -6px; border-radius: 100%;}
+.hbg_menu_wrap .menu_cont header .close_btn { width: 33px; height: 33px; background: url(../images/btn_gnb_close.png) no-repeat; transform: translateY(-50%); right: 40px;}
+
+.hbg_menu_wrap .login_men_info { text-align: center; padding-bottom: 86px;}
+.hbg_menu_wrap .login_men_info strong { font-size: 36px; font-weight: 700;}
+.hbg_menu_wrap .login_men_info p { font-size: 24px;}
+
+.hbg_menu_wrap .btn_sys_admin { text-align: center;}
+.hbg_menu_wrap .btn_sys_admin a { display: inline-block; width: 174px; height: 174px; background: #f9cc3d; border-radius: 100%; position: relative; text-align: center;}
+.hbg_menu_wrap .btn_sys_admin a span { font-size: 28px; font-weight: 700; color: #333; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.hbg_menu_wrap ul { text-align: center; margin-top: 82px;}
+.hbg_menu_wrap ul li { margin-bottom: 60px;}
+.hbg_menu_wrap ul li a { color: #333; font-size: 26px; font-weight: 500;}
 
 
-
+/* 팝업 end */
 
 
 

@@ -163,6 +163,25 @@ $(".tempo").click(function(){
 
 
 
+// 모바일 사건배당전
+$(".menu_btn").click(function(){
+	$(".menu_backg").fadeIn();
+	$(".hbg_menu_wrap").animate({right:0});
+});
+$(".close_btn").click(function(){
+	$(".menu_backg").fadeOut();
+	$(".hbg_menu_wrap").animate({right:-600});
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
